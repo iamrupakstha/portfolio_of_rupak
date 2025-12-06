@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-color: black;
+    color: darkorange;
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+
+}
+li{
+    list-style: none;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 20px 10%;
+    background-color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 500;
+    color: darkorange;
+    font-family: "Barriecito", system-ui;
+}
+.logo a{
+    color: black;
+   
+}
+.logo a:hover{
+    color:darkorange;
+}
+.nav-links{
+    display: flex;
+}
+.nav-links a{
+    padding: 5px 0;
+    margin: 0 15px;
+    color: black;
+    font-size: 16px;
+    font-weight: 200;
+}
+.nav-links a:hover{
+    color: darkorange;
+    border-bottom: 2px solid darkorange;
+    
+}
+.main {
+    display: flex;
+    align-items: center;
+    
+}
+.main a{
+    font-size: 20px;
+    padding: 8px 16px;
+    transition: all 0.2s ease;
+    display: flex;
+    border-radius: 25px;
+    align-items: center;
+    color:  black;
+
+}
+.main i{
+    margin-right: 5px;
+    color:red;
+    font-size:20px;
+}
+.main a:hover{
+    background-color: bisque;
+}
+
+#menu{
+    color: black;
+    font-size: 25px;
+    margin: 0 12px;
+    display: none;
+}
+#menu:hover{
+    color: darkorange;
+    transform: scale(1.1);
+}
+
+@media (max-width: 1280px){
+    header{
+        padding: 10px 2%;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    .nav-links a{
+        padding: 5px 0;
+        margin: 0px 15px;
+    }
+}
+@media(max-width: 1090px){
+    #menu{
+        display: flex;
+    }
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        width: 270px;
+        margin-right: 1%;
+        height: 45vh;
+        background-color: aliceblue;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        border-radius: 25px;
+    }
+    .nav-links a{
+        display: block;
+        margin: 12px 5px;
+        padding: 0px 25px;
+    }
+    .nav-links a:hover{
+        color: darkorange;
+    }
+    .nav-links.open{
+        right: 1%;
+    }
+}
