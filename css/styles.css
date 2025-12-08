@@ -120,7 +120,7 @@
 
         /* Section Common Styles */
         section {
-            padding: 3.5rem 1.5rem;
+            padding: 3rem 3rem;
             max-width: 1200px;
             margin: 0 auto;
         }
@@ -423,16 +423,16 @@
             cursor: pointer;
         }
         .tech-icons-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-  padding: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #cbd5e1;
-}
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1.5rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #cbd5e1;
+        }
 
 .tech-icons-container img {
   transition: all 0.3s ease;
@@ -543,7 +543,7 @@
 
         .skills-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: 2fr 2fr 2fr;
             gap: 2rem;
         }
 
@@ -665,11 +665,9 @@
             margin: 0 auto;
         }
 
-        .resume-download {
-            margin-top: 3rem;
-        }
+        
 
-        .resume-download a {
+        .resume-container button a {
             display: inline-flex;
             align-items: center;
             gap: 0.8rem;
@@ -683,7 +681,7 @@
             transition: all 0.3s;
         }
 
-        .resume-download a:hover {
+        .resume-container button a:hover {
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(59, 130, 246, 0.3);
         }
@@ -904,6 +902,10 @@
                 width: 45px;
                 height: 45px;
             }
+            .projects-grid, .skills-container,
+            .blog-grid {
+                grid-template-columns: 1fr 1fr;
+            }
         }
 
         @media (max-width: 576px) {
@@ -923,7 +925,7 @@
                 padding: 3rem 1rem;
             }
             
-            .projects-grid,
+            .projects-grid, .skills-container,
             .blog-grid {
                 grid-template-columns: 1fr;
             }
