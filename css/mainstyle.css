@@ -232,24 +232,7 @@
             margin-bottom: 0.5rem;
         }
 
-        .footer-links-bottom {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            margin-top: 1rem;
-        }
-
-        .footer-links-bottom a {
-            color: #94a3b8;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .footer-links-bottom a:hover {
-            color: #60a5fa;
-        }
-
+      
         /* Back to Top Button */
         .back-to-top {
             position: fixed;
